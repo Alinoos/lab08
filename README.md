@@ -161,6 +161,8 @@ $ gist REPORT.md
 ```sh
 $ mkdir lab08
 $ cd lab08
+$ git init 
+$ git remote add origin 
 $ mkdir include
 $ cd include
 $ cd include
@@ -205,7 +207,7 @@ $ cat >> main.cpp << EOF
 >EOF
 $ nano main.cpp
 
-	Содержимое файла print.hpp:
+	Содержимое файла main.cpp:
 
 #include <print.hpp>
 #include <cstdlib>
@@ -227,6 +229,27 @@ int main(int argc, char* argv[])
   }
 }
 
+
+$ cd ..
+$ mkdir logs
+$ cd logs
+$ cat >> log.txt << EOF
+>EOF
+$ nano log.txt
+
+	Содержимое файла log.txt:
+
+simple text
+
+$ cd ..
+$ git add .
+$ git commit -m "Code files - 1"
+[master (корневой коммит) c55e2e2] Code files - 1
+ 4 files changed, 37 insertions(+)
+ create mode 100644 demo/main.cpp
+ create mode 100644 include/print.hpp
+ create mode 100644 logs/log.txt
+ create mode 100644 source/print.cpp
 
 ```
 ## Links
